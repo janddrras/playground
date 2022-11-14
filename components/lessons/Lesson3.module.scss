@@ -1,0 +1,30 @@
+.wrapper {
+  margin: 2rem auto;
+  width: clamp(calc(320px - 3rem), 75%, 70ch);
+  border: 0.5rem solid black;
+  .grid {
+    ul {
+      list-style: none;
+      margin: 1rem;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-flow: row;
+      gap: 0.5rem;
+      li {
+        border: 0.3rem solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.featured {
+          border-color: purple;
+          grid-row: span 2;
+        }
+        &.featured2 {
+          border-color: blue;
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+}
