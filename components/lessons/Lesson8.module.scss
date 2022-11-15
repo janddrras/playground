@@ -1,0 +1,37 @@
+.wrapper {
+  --content-width: 50ch;
+  margin: 0;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
+    max-width: calc(var(content-width) - 4rem);
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, var(--content-width)) 1fr;
+    & > * {
+      grid-column: 2;
+    }
+  }
+
+  .highlight {
+    background-color: rgb(71, 167, 251);
+  }
+
+  .fullWidth {
+    grid-column: 1/-1;
+    padding: 2rem 0;
+  }
+}

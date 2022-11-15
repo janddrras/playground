@@ -1,0 +1,48 @@
+.wrapper {
+  --content-width: 50ch;
+  margin: 0;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
+    max-width: calc(var(content-width) - 4rem);
+  }
+
+  .card {
+    width: clamp(20ch, 50%, var(--content-width));
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: auto;
+    img {
+        border-radius: 25px 25px 0 0;
+    }
+    figcaption {
+        padding: 1rem;
+        text-align: center;
+    }
+    .cta {
+      padding: 0.75rem 1rem;
+      border: 0.1rem solid black;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      cursor: pointer;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
