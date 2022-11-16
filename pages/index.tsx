@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Experiments</title>
       </Head>
       {/* <Lesson nr={null} /> */}
-      <Link href='/tailwind'>Tailwind css</Link>
+      <Link href='/tailwind' className='text-2xl text-sky-400 hover:text-black hover:underline'>Tailwind css</Link>
     </div>
   )
 }
