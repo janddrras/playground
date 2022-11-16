@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Lesson from '../components/lessons/Lesson13'
+import Lesson from '../components/css-layout-challanges/Lesson13'
 import styles from './Home.module.scss'
 
 export default function Home() {
