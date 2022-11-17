@@ -1,7 +1,7 @@
 import styles from './Layout.module.scss'
 
 export interface ILayout {
-  children: any
+  children: JSX.Element
   //   ComponentTemplateProp: string
 }
 
