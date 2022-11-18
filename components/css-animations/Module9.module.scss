@@ -1,0 +1,39 @@
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #fbacb3;
+  padding: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cls1 {
+    fill: #c32d4f;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    animation: beat 0.8s linear, fade 0.25s reverse both;
+  }
+  .cls2 {
+    fill: none;
+    stroke: #c32d4f;
+    animation: fade 0.25s 0.4s linear both;
+  }
+  @keyframes beat {
+    0% {
+      transform: scale(0.1);
+    }
+    80% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

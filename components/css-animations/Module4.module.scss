@@ -1,0 +1,24 @@
+.wrap {
+  margin: auto;
+  h2 {
+    font-size: 10rem;
+    font-family: 'Fira Sans', sans-serif;
+    color: #dcf2b0;
+    text-shadow: 3px 3px 0px #59c3c3;
+    animation-name: text-animation;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+  @keyframes text-animation {
+    0% {
+      transform: scale(0.1);
+    }
+    85% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

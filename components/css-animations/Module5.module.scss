@@ -1,0 +1,38 @@
+.wrap {
+  padding: 5em;
+  background: #cfcfcf;
+  // width: 100%;
+  height: auto;
+  margin: auto;
+
+  h2 {
+    display: inline-block;
+    padding: 0 0.1rem;
+    color: #433f55;
+    font-family: 'Fira Mono', monospace;
+    overflow: hidden;
+    border-right: 0.15em solid #ce2d4f;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 5s steps(14), blinking 0.8s steps(1) infinite;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+  @keyframes blinking {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #ce2d4f;
+    }
+  }
+  @keyframes typing {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
